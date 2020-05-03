@@ -34,9 +34,8 @@
                 background-color: #804080;
                 font-family: 'Patrick Hand', Verdana, Arial, Helvetica, sans-serif;
                 font-size: 18pt;
-                color: black;
+                color: white;
                 height: 100%;
-
                 
                 line-height: 140%;
                 
@@ -101,12 +100,22 @@
             <div style="margin:auto; text-align: center;">
                 <h1>Hey you! We've moved!</h1>
                 <h2>Visit our new site at:</h2>
-                <a href="https://tinygoose.com">https://www.tinygoose.com/</a>
+                <a href="https://tinygoose.com">tinygoose.com</a>
+                <br />
+                <span>(or we'll redirect you in 5 seconds...)</span>
             </div>
         </div>                     
         
         <!-- jQuery/Bootstrap -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                setTimeout(() => {
+                    window.location = "https://tinygoose.com/"
+                }, 5000);
+            });
+        </script>
     </body>
 </html>
